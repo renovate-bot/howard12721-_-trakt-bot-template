@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.3.20"
+kotlin = "2.3.21"
 trakt-bot = "2da221bc51"
 kotlinx-coroutines = "1.10.2"
 
