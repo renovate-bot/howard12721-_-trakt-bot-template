@@ -20,29 +20,5 @@ suspend fun main() {
             }
         }
 
-    /*
-
-    セルフボットの場合
-
-    val config = Config.SelfBot.fromEnvironment()
-
-    val client =
-        selfTrakt(
-            token = config.token,
-        ) {
-            on<UserMessageCreated> { event ->
-                val message = event.message.fetch()
-                if (message.content.startsWith("!ping")) {
-                    message.reply("pong!")
-                }
-            }
-        }
-
-     */
-
-    try {
-        client.start()
-    } finally {
-        client.stop()
-    }
+    client.run()
 }
